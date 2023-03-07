@@ -50,7 +50,9 @@ const ImgContainer = styled.div`
     height: 100%;
 `
 const Image = styled.img`
-    height: 80%;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 `
 const InfoContainer = styled.div`
     flex:1;
@@ -99,7 +101,7 @@ const Slider = () => {
                 <InfoContainer>
                     <Title>{item.title}</Title>
                     <Desc>{item.desc}</Desc>
-                    <Link to="/product">
+                    <Link to="/product/:id">
                         <Button>SHOP NOW</Button>
                     </Link>
                 </InfoContainer>

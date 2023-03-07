@@ -7,10 +7,10 @@ import { useSelector } from "react-redux"
 import StripeCheckout from "react-stripe-checkout";
 import { useState, useEffect } from "react"
 import { useNavigate } from "react-router-dom"
-import axios from "axios"
+import axios from "axios";
 
 
- const KEY = "pk_test_51LqL71KZIagPmMTgdWs589rSxSQ5MORk0oqjkkkXjhRvxRV2FcBqmd699SsY6feHg2sxlHHBje41GdJnFbXsQwl200hJNhpXgy";
+ const KEY = process.env.REACT_APP_STRIPE;
 
 const Container = styled.div`
 
