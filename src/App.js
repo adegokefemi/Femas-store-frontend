@@ -19,18 +19,18 @@ const Container = styled.div`
 
 `
 
-const Wrapper = styled.div`
-  list-style: none;
-  padding: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  text-underline: none;
-  &:hover {
-    color: teal;
-  }
+// const Wrapper = styled.div`
+//   list-style: none;
+//   padding: 10px;
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-around;
+//   text-underline: none;
+//   &:hover {
+//     color: teal;
+//   }
 
-`
+// `
 
 
 function App() {

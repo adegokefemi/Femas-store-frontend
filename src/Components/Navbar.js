@@ -74,7 +74,7 @@ const Navbar = () => {
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </SearchContainer>
             </Left> 
-           <Center><Logo>FEMAS STORE</Logo></Center>
+           <Center><Logo>FAG-STORE</Logo></Center>
            <Right>
                 <Link to="/register">
                     <MenuItem>
