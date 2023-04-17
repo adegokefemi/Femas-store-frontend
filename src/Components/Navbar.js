@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { mobile } from '../responsive';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-
+ 
 
 const Container = styled.div`
     height:60%;
@@ -74,22 +74,24 @@ const Navbar = () => {
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </SearchContainer>
             </Left> 
-           <Center><Logo>FAG-STORE</Logo></Center>
+           <Center>
+                <Logo>FAG-STORE</Logo>
+           </Center>
            <Right>
-                <Link to="/register">
+                <Link to="/register" style={{textDecoration:"none", color:"gray"}}>
                     <MenuItem>
                         REGISTER
                     </MenuItem>
                 </Link>
-                <Link to="/login">
+                <Link to="/login" style={{textDecoration:"none", color:"gray"}}>
                     <MenuItem>
                         SIGN IN
                     </MenuItem>
                 </Link>
                 <Link to="/cart">
                     <MenuItem>
-                    <i class="fa fa-shopping-cart" aria-hidden="true">
-                        { quantity }
+                    <i class="fa fa-shopping-cart" aria-hidden="true" style={{color:"gray", fontSize:"12px"}}>
+                        {quantity}
                     </i>
                     </MenuItem>
                 </Link>

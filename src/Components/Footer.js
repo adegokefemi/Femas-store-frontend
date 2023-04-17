@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { mobile } from "../responsive";
+import {FaHome, FaMailBulk, FaPhone} from "react-icons/fa"
 
 const Container = styled.div`
     display: flex;
@@ -70,7 +71,7 @@ function Footer() {
   return (
     <Container>
       <Left>
-        <Logo>FEMAS.</Logo>
+        <Logo>FAG-STORE.</Logo>
         <Desc>There are varieties of our product and you can trust us for quality and affordable goods deliver to you.</Desc>
         <SocialContainter>
             <SocialIcon color="3B5999">
@@ -104,14 +105,14 @@ function Footer() {
       </Center>
       <Right>
         <Title>Contact</Title>
-        <ContactItem>
-            <i style={{marginRight: "10px"}} class="fa-light fa-location-dot"></i> Lagos, Nigeria
+        <ContactItem> 
+            <FaHome size={"20px"} style={{ marginRight:"10px ", color:"gray"}}/> Mainland, Lagos, Nigeria.
         </ContactItem>
         <ContactItem>
-            <i style={{marginRight: "10px"}} class="fa-regular fa-phone"></i> +2348062646761
+            <FaPhone size={"20px"} style={{ marginRight:"10px ", color:"gray"}} />  +2348062646761.
         </ContactItem>
         <ContactItem>
-                <i style={{marginRight: "10px"}} class="fa-regular fa-envelope"></i> adegokefemi95@gmail.com
+            <FaMailBulk size={"20px"} style={{ marginRight:"10px ", color:"gray"}} /> adegokefemi95@gmail.com.
         </ContactItem>
         <Payment src="https://i.ibb.co/Qfvn4z6/payment.png" />
       </Right>
